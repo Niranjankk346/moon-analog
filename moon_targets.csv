@@ -1,0 +1,3 @@
+site,elev_min_m,elev_max_m,slope_mean_deg,slope_median_deg,slope_p90_deg,slope_std_deg,pct_under_10deg
+Site04 outer rim terrain,551.9,1457.2,11.0,11.5,17.2,4.9,41.3
+Site04 crater wall,-2597.4,1423.5,30.4,31.5,33.7,4.4,0.6

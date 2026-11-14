@@ -1,0 +1,1297 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_27ea24173235efbbc727dde51b4422d1 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_27ea24173235efbbc727dde51b4422d1" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_27ea24173235efbbc727dde51b4422d1 = L.map(
+                "map_27ea24173235efbbc727dde51b4422d1",
+                {
+                    center: [33.251140241684084, 78.49299289579555],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 8,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_08cdbcd38d64d7e2ae54dffa7d39fbb2 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_08cdbcd38d64d7e2ae54dffa7d39fbb2.addTo(map_27ea24173235efbbc727dde51b4422d1);
+        
+    
+            var tile_layer_de695721c896e5dda69efd0cd74f3a65 = L.tileLayer(
+                "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+                {
+  "minZoom": 0,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "Esri, Maxar, Earthstar Geographics",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_de695721c896e5dda69efd0cd74f3a65.addTo(map_27ea24173235efbbc727dde51b4422d1);
+        
+    
+            var circle_marker_6c532370723d75307e61eb3b134c1c46 = L.circleMarker(
+                [33.17029186611333, 78.31063489311929],
+                {"bubblingMouseEvents": true, "color": "#006837", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#006837", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_27ea24173235efbbc727dde51b4422d1);
+        
+    
+        var popup_9e855239fe1867a6aadc0ba20ff0228d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3c419fdbcad970e701e6cc062c0b5a57 = $(`<div id="html_3c419fdbcad970e701e6cc062c0b5a57" style="width: 100.0%; height: 100.0%;">Ladakh/Changthang | score 0.14 | slope 12.3 deg | night min -31 C</div>`)[0];
+                popup_9e855239fe1867a6aadc0ba20ff0228d.setContent(html_3c419fdbcad970e701e6cc062c0b5a57);
+            
+        
+
+        circle_marker_6c532370723d75307e61eb3b134c1c46.bindPopup(popup_9e855239fe1867a6aadc0ba20ff0228d)
+        ;
+
+        
+    
+    
+            var circle_marker_4a917b8c07301fc59fbdcc127b1e099c = L.circleMarker(
+                [33.0355445734954, 78.13097183629537],
+                {"bubblingMouseEvents": true, "color": "#036e3a", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#036e3a", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_27ea24173235efbbc727dde51b4422d1);
+        
+    
+        var popup_9f4ac8aaa6c92ad72f8b237ad501bc8b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ae60fbae12b4b0c869a886229fc0f2d7 = $(`<div id="html_ae60fbae12b4b0c869a886229fc0f2d7" style="width: 100.0%; height: 100.0%;">Ladakh/Changthang | score 0.14 | slope 13.5 deg | night min -35 C</div>`)[0];
+                popup_9f4ac8aaa6c92ad72f8b237ad501bc8b.setContent(html_ae60fbae12b4b0c869a886229fc0f2d7);
+            
+        
+
+        circle_marker_4a917b8c07301fc59fbdcc127b1e099c.bindPopup(popup_9f4ac8aaa6c92ad72f8b237ad501bc8b)
+        ;
+
+        
+    
+    
+            var circle_marker_2bf1c30a75684bf44bb5c955d5f48118 = L.circleMarker(
+                [33.080460337701375, 78.35555065732525],
+                {"bubblingMouseEvents": true, "color": "#0d8044", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0d8044", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_27ea24173235efbbc727dde51b4422d1);
+        
+    
+        var popup_58c1076d7f6a152b4f901ad244a23600 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9f9ef23e6496aa1119b3b3f647685181 = $(`<div id="html_9f9ef23e6496aa1119b3b3f647685181" style="width: 100.0%; height: 100.0%;">Ladakh/Changthang | score 0.15 | slope 8.4 deg | night min -31 C</div>`)[0];
+                popup_58c1076d7f6a152b4f901ad244a23600.setContent(html_9f9ef23e6496aa1119b3b3f647685181);
+            
+        
+
+        circle_marker_2bf1c30a75684bf44bb5c955d5f48118.bindPopup(popup_58c1076d7f6a152b4f901ad244a23600)
+        ;
+
+        
+    
+    
+            var circle_marker_83c31fad64eecea5ac2f407d92d592f2 = L.circleMarker(
+                [33.0355445734954, 78.44538218573722],
+                {"bubblingMouseEvents": true, "color": "#249d53", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#249d53", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_27ea24173235efbbc727dde51b4422d1);
+        
+    
+        var popup_17c54f40688043939462f0a7eaaa23bf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a01d7c86d596d329496120ca16d4839e = $(`<div id="html_a01d7c86d596d329496120ca16d4839e" style="width: 100.0%; height: 100.0%;">Ladakh/Changthang | score 0.16 | slope 10.6 deg | night min -37 C</div>`)[0];
+                popup_17c54f40688043939462f0a7eaaa23bf.setContent(html_a01d7c86d596d329496120ca16d4839e);
+            
+        
+
+        circle_marker_83c31fad64eecea5ac2f407d92d592f2.bindPopup(popup_17c54f40688043939462f0a7eaaa23bf)
+        ;
+
+        
+    
+    
+            var circle_marker_aa06fdca6015eece1349572b4379dd7d = L.circleMarker(
+                [33.215207630319306, 78.04114030788342],
+                {"bubblingMouseEvents": true, "color": "#51b35e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#51b35e", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_27ea24173235efbbc727dde51b4422d1);
+        
+    
+        var popup_7b4cf206820f2529082b93457ed4f33c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1f3a55ca05a09ab487a7a77a649fb43a = $(`<div id="html_1f3a55ca05a09ab487a7a77a649fb43a" style="width: 100.0%; height: 100.0%;">Ladakh/Changthang | score 0.18 | slope 11.9 deg | night min -28 C</div>`)[0];
+                popup_7b4cf206820f2529082b93457ed4f33c.setContent(html_1f3a55ca05a09ab487a7a77a649fb43a);
+            
+        
+
+        circle_marker_aa06fdca6015eece1349572b4379dd7d.bindPopup(popup_7b4cf206820f2529082b93457ed4f33c)
+        ;
+
+        
+    
+    
+            var circle_marker_ed83995f51a6c9927350d82d06734549 = L.circleMarker(
+                [33.39487068714321, 78.849624063591],
+                {"bubblingMouseEvents": true, "color": "#57b65f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#57b65f", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_27ea24173235efbbc727dde51b4422d1);
+        
+    
+        var popup_ac895e46ca7091711899842ee95cb14a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cac882999ee3db6449ac2fa08d56391e = $(`<div id="html_cac882999ee3db6449ac2fa08d56391e" style="width: 100.0%; height: 100.0%;">Ladakh/Changthang | score 0.18 | slope 10.7 deg | night min -27 C</div>`)[0];
+                popup_ac895e46ca7091711899842ee95cb14a.setContent(html_cac882999ee3db6449ac2fa08d56391e);
+            
+        
+
+        circle_marker_ed83995f51a6c9927350d82d06734549.bindPopup(popup_ac895e46ca7091711899842ee95cb14a)
+        ;
+
+        
+    
+    
+            var circle_marker_8c97b19eca57e5da3b4290053c57a5fe = L.circleMarker(
+                [33.080460337701375, 78.13097183629537],
+                {"bubblingMouseEvents": true, "color": "#5ab760", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5ab760", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_27ea24173235efbbc727dde51b4422d1);
+        
+    
+        var popup_f7307a6a9b2c6defad3b7dd53cb54ab7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6837517fcea533a4ba916498b88fe41c = $(`<div id="html_6837517fcea533a4ba916498b88fe41c" style="width: 100.0%; height: 100.0%;">Ladakh/Changthang | score 0.18 | slope 13.5 deg | night min -34 C</div>`)[0];
+                popup_f7307a6a9b2c6defad3b7dd53cb54ab7.setContent(html_6837517fcea533a4ba916498b88fe41c);
+            
+        
+
+        circle_marker_8c97b19eca57e5da3b4290053c57a5fe.bindPopup(popup_f7307a6a9b2c6defad3b7dd53cb54ab7)
+        ;
+
+        
+    
+    
+            var circle_marker_58b5338b158aaf357bbe1daa43db2d0a = L.circleMarker(
+                [33.12537610190736, 78.2657191289133],
+                {"bubblingMouseEvents": true, "color": "#5db961", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5db961", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_27ea24173235efbbc727dde51b4422d1);
+        
+    
+        var popup_c5af2d432767cbe3918ca7a8820216f1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_712354e51376825f12ce682d56d55f0b = $(`<div id="html_712354e51376825f12ce682d56d55f0b" style="width: 100.0%; height: 100.0%;">Ladakh/Changthang | score 0.18 | slope 8.9 deg | night min -30 C</div>`)[0];
+                popup_c5af2d432767cbe3918ca7a8820216f1.setContent(html_712354e51376825f12ce682d56d55f0b);
+            
+        
+
+        circle_marker_58b5338b158aaf357bbe1daa43db2d0a.bindPopup(popup_c5af2d432767cbe3918ca7a8820216f1)
+        ;
+
+        
+    
+    
+            var circle_marker_ad7d057e98de40f0059a47a0675855ee = L.circleMarker(
+                [33.39487068714321, 78.04114030788342],
+                {"bubblingMouseEvents": true, "color": "#66bd63", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#66bd63", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_27ea24173235efbbc727dde51b4422d1);
+        
+    
+        var popup_6930e41e9364eae7e8ee7256391e5736 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5bc5b8dd0ef241583b5578047291c0f3 = $(`<div id="html_5bc5b8dd0ef241583b5578047291c0f3" style="width: 100.0%; height: 100.0%;">Ladakh/Changthang | score 0.18 | slope 13.1 deg | night min -29 C</div>`)[0];
+                popup_6930e41e9364eae7e8ee7256391e5736.setContent(html_5bc5b8dd0ef241583b5578047291c0f3);
+            
+        
+
+        circle_marker_ad7d057e98de40f0059a47a0675855ee.bindPopup(popup_6930e41e9364eae7e8ee7256391e5736)
+        ;
+
+        
+    
+    
+            var circle_marker_a0a97f64b638ffb6c047e592ed361534 = L.circleMarker(
+                [33.439786451349185, 78.75979253517905],
+                {"bubblingMouseEvents": true, "color": "#78c565", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#78c565", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_27ea24173235efbbc727dde51b4422d1);
+        
+    
+        var popup_d9e370ff3b588f96e7148f8975b00882 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c6655294a4aa76fd7fcfb85716b5a590 = $(`<div id="html_c6655294a4aa76fd7fcfb85716b5a590" style="width: 100.0%; height: 100.0%;">Ladakh/Changthang | score 0.19 | slope 10.3 deg | night min -27 C</div>`)[0];
+                popup_d9e370ff3b588f96e7148f8975b00882.setContent(html_c6655294a4aa76fd7fcfb85716b5a590);
+            
+        
+
+        circle_marker_a0a97f64b638ffb6c047e592ed361534.bindPopup(popup_d9e370ff3b588f96e7148f8975b00882)
+        ;
+
+        
+    
+    
+            var circle_marker_1adcf810c35ffc24023fa04e0907501e = L.circleMarker(
+                [33.26012339452528, 78.0860560720894],
+                {"bubblingMouseEvents": true, "color": "#8ecf67", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#8ecf67", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_27ea24173235efbbc727dde51b4422d1);
+        
+    
+        var popup_0e705e24da6758542dd593849328ef28 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dc4f8664ffa0cf1ba42f2400fded2ccc = $(`<div id="html_dc4f8664ffa0cf1ba42f2400fded2ccc" style="width: 100.0%; height: 100.0%;">Ladakh/Changthang | score 0.20 | slope 10.1 deg | night min -28 C</div>`)[0];
+                popup_0e705e24da6758542dd593849328ef28.setContent(html_dc4f8664ffa0cf1ba42f2400fded2ccc);
+            
+        
+
+        circle_marker_1adcf810c35ffc24023fa04e0907501e.bindPopup(popup_0e705e24da6758542dd593849328ef28)
+        ;
+
+        
+    
+    
+            var circle_marker_58e205b441935c1972b9a4636f94b658 = L.circleMarker(
+                [33.349954922937236, 78.849624063591],
+                {"bubblingMouseEvents": true, "color": "#9dd569", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9dd569", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_27ea24173235efbbc727dde51b4422d1);
+        
+    
+        var popup_1cb38838ac1b3cd63f9a0abdbe75dff9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_19c79ceac66c13609cdb766419f83de1 = $(`<div id="html_19c79ceac66c13609cdb766419f83de1" style="width: 100.0%; height: 100.0%;">Ladakh/Changthang | score 0.20 | slope 11.3 deg | night min -26 C</div>`)[0];
+                popup_1cb38838ac1b3cd63f9a0abdbe75dff9.setContent(html_19c79ceac66c13609cdb766419f83de1);
+            
+        
+
+        circle_marker_58e205b441935c1972b9a4636f94b658.bindPopup(popup_1cb38838ac1b3cd63f9a0abdbe75dff9)
+        ;
+
+        
+    
+    
+            var circle_marker_6bd851d70507ea2dda61b191f9237d5f = L.circleMarker(
+                [33.0355445734954, 78.31063489311929],
+                {"bubblingMouseEvents": true, "color": "#a0d669", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#a0d669", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_27ea24173235efbbc727dde51b4422d1);
+        
+    
+        var popup_d33871cb4e2ffee3f07e34ecb39be090 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_48268de87bfc2e5415918d20a6dc51c5 = $(`<div id="html_48268de87bfc2e5415918d20a6dc51c5" style="width: 100.0%; height: 100.0%;">Ladakh/Changthang | score 0.20 | slope 9.0 deg | night min -27 C</div>`)[0];
+                popup_d33871cb4e2ffee3f07e34ecb39be090.setContent(html_48268de87bfc2e5415918d20a6dc51c5);
+            
+        
+
+        circle_marker_6bd851d70507ea2dda61b191f9237d5f.bindPopup(popup_d33871cb4e2ffee3f07e34ecb39be090)
+        ;
+
+        
+    
+    
+            var circle_marker_47e7e8b867eb00e8ba48bbc6abcedbdb = L.circleMarker(
+                [33.080460337701375, 78.31063489311929],
+                {"bubblingMouseEvents": true, "color": "#addc6f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#addc6f", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_27ea24173235efbbc727dde51b4422d1);
+        
+    
+        var popup_6c57ef31c7fe819353ce696123fb9455 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_34a4ffe3eb41cbc35982f7d3f8a51be4 = $(`<div id="html_34a4ffe3eb41cbc35982f7d3f8a51be4" style="width: 100.0%; height: 100.0%;">Ladakh/Changthang | score 0.21 | slope 9.2 deg | night min -29 C</div>`)[0];
+                popup_6c57ef31c7fe819353ce696123fb9455.setContent(html_34a4ffe3eb41cbc35982f7d3f8a51be4);
+            
+        
+
+        circle_marker_47e7e8b867eb00e8ba48bbc6abcedbdb.bindPopup(popup_6c57ef31c7fe819353ce696123fb9455)
+        ;
+
+        
+    
+    
+            var circle_marker_2137788cbe738cbd5ed0e29247c201ad = L.circleMarker(
+                [33.0355445734954, 78.35555065732525],
+                {"bubblingMouseEvents": true, "color": "#bbe278", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#bbe278", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_27ea24173235efbbc727dde51b4422d1);
+        
+    
+        var popup_ec1d74ddf42fd72edc2b3e9b1c7500c6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7aec5fc20aae897a5c73783728e60434 = $(`<div id="html_7aec5fc20aae897a5c73783728e60434" style="width: 100.0%; height: 100.0%;">Ladakh/Changthang | score 0.22 | slope 13.4 deg | night min -29 C</div>`)[0];
+                popup_ec1d74ddf42fd72edc2b3e9b1c7500c6.setContent(html_7aec5fc20aae897a5c73783728e60434);
+            
+        
+
+        circle_marker_2137788cbe738cbd5ed0e29247c201ad.bindPopup(popup_ec1d74ddf42fd72edc2b3e9b1c7500c6)
+        ;
+
+        
+    
+    
+            var circle_marker_f8235af3b41662e4e01ab431b030f4af = L.circleMarker(
+                [33.39487068714321, 78.80470829938503],
+                {"bubblingMouseEvents": true, "color": "#c5e67e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c5e67e", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_27ea24173235efbbc727dde51b4422d1);
+        
+    
+        var popup_527dab2368ee22210ea9b7a6fc218a86 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4f156ceafa4e7d346d62929ec00d119b = $(`<div id="html_4f156ceafa4e7d346d62929ec00d119b" style="width: 100.0%; height: 100.0%;">Ladakh/Changthang | score 0.22 | slope 12.0 deg | night min -29 C</div>`)[0];
+                popup_527dab2368ee22210ea9b7a6fc218a86.setContent(html_4f156ceafa4e7d346d62929ec00d119b);
+            
+        
+
+        circle_marker_f8235af3b41662e4e01ab431b030f4af.bindPopup(popup_527dab2368ee22210ea9b7a6fc218a86)
+        ;
+
+        
+    
+    
+            var circle_marker_6120f730ce36a302900b1fc97979df16 = L.circleMarker(
+                [33.215207630319306, 78.2657191289133],
+                {"bubblingMouseEvents": true, "color": "#cbe982", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#cbe982", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_27ea24173235efbbc727dde51b4422d1);
+        
+    
+        var popup_da098eb2c4686da742fb21f185bd50e3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a0e4f338f82176f1d6301cc9ba0edb3c = $(`<div id="html_a0e4f338f82176f1d6301cc9ba0edb3c" style="width: 100.0%; height: 100.0%;">Ladakh/Changthang | score 0.22 | slope 12.1 deg | night min -26 C</div>`)[0];
+                popup_da098eb2c4686da742fb21f185bd50e3.setContent(html_a0e4f338f82176f1d6301cc9ba0edb3c);
+            
+        
+
+        circle_marker_6120f730ce36a302900b1fc97979df16.bindPopup(popup_da098eb2c4686da742fb21f185bd50e3)
+        ;
+
+        
+    
+    
+            var circle_marker_e00d439d14585126f3355bea3b7459ce = L.circleMarker(
+                [33.0355445734954, 78.17588760050135],
+                {"bubblingMouseEvents": true, "color": "#d1ec86", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d1ec86", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_27ea24173235efbbc727dde51b4422d1);
+        
+    
+        var popup_8a014725be3139a126737aa0548745db = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cbb55c7c1e98f3132ec8b8872a711f46 = $(`<div id="html_cbb55c7c1e98f3132ec8b8872a711f46" style="width: 100.0%; height: 100.0%;">Ladakh/Changthang | score 0.23 | slope 14.6 deg | night min -36 C</div>`)[0];
+                popup_8a014725be3139a126737aa0548745db.setContent(html_cbb55c7c1e98f3132ec8b8872a711f46);
+            
+        
+
+        circle_marker_e00d439d14585126f3355bea3b7459ce.bindPopup(popup_8a014725be3139a126737aa0548745db)
+        ;
+
+        
+    
+    
+            var circle_marker_8cebecfa99ad2acbe8697c84277c7a58 = L.circleMarker(
+                [33.439786451349185, 78.04114030788342],
+                {"bubblingMouseEvents": true, "color": "#dcf08f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#dcf08f", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_27ea24173235efbbc727dde51b4422d1);
+        
+    
+        var popup_8ae604700e73fcea923af8c21a2f40eb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c3441fcd34b79cc0c76fc47e4f22550a = $(`<div id="html_c3441fcd34b79cc0c76fc47e4f22550a" style="width: 100.0%; height: 100.0%;">Ladakh/Changthang | score 0.23 | slope 13.6 deg | night min -31 C</div>`)[0];
+                popup_8ae604700e73fcea923af8c21a2f40eb.setContent(html_c3441fcd34b79cc0c76fc47e4f22550a);
+            
+        
+
+        circle_marker_8cebecfa99ad2acbe8697c84277c7a58.bindPopup(popup_8ae604700e73fcea923af8c21a2f40eb)
+        ;
+
+        
+    
+    
+            var circle_marker_5bea539ddc0990e1f9b80c824a9c7adf = L.circleMarker(
+                [33.48470221555516, 78.75979253517905],
+                {"bubblingMouseEvents": true, "color": "#e2f397", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e2f397", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_27ea24173235efbbc727dde51b4422d1);
+        
+    
+        var popup_db094fd89c9f23c6e069cdc231048dd7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4cfe697eec2978df3310c70b4e4965c1 = $(`<div id="html_4cfe697eec2978df3310c70b4e4965c1" style="width: 100.0%; height: 100.0%;">Ladakh/Changthang | score 0.24 | slope 10.8 deg | night min -25 C</div>`)[0];
+                popup_db094fd89c9f23c6e069cdc231048dd7.setContent(html_4cfe697eec2978df3310c70b4e4965c1);
+            
+        
+
+        circle_marker_5bea539ddc0990e1f9b80c824a9c7adf.bindPopup(popup_db094fd89c9f23c6e069cdc231048dd7)
+        ;
+
+        
+    
+    
+            var circle_marker_c21fa5e5a51f394fa0f17bae2539ced2 = L.circleMarker(
+                [33.12537610190736, 78.35555065732525],
+                {"bubblingMouseEvents": true, "color": "#e5f49b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e5f49b", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_27ea24173235efbbc727dde51b4422d1);
+        
+    
+        var popup_181dddb734c2cfe5dd829773c3235f85 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6a5c26e2125e4fa34f42385210207211 = $(`<div id="html_6a5c26e2125e4fa34f42385210207211" style="width: 100.0%; height: 100.0%;">Ladakh/Changthang | score 0.24 | slope 11.7 deg | night min -30 C</div>`)[0];
+                popup_181dddb734c2cfe5dd829773c3235f85.setContent(html_6a5c26e2125e4fa34f42385210207211);
+            
+        
+
+        circle_marker_c21fa5e5a51f394fa0f17bae2539ced2.bindPopup(popup_181dddb734c2cfe5dd829773c3235f85)
+        ;
+
+        
+    
+    
+            var circle_marker_ce95c7f12714df8fd24065924f3eabf4 = L.circleMarker(
+                [33.12537610190736, 78.31063489311929],
+                {"bubblingMouseEvents": true, "color": "#ebf7a3", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ebf7a3", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_27ea24173235efbbc727dde51b4422d1);
+        
+    
+        var popup_8972e8746dd5bcfe829895b2dbb85b4e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_024ffc8de47995bdef95a4bd5c56b312 = $(`<div id="html_024ffc8de47995bdef95a4bd5c56b312" style="width: 100.0%; height: 100.0%;">Ladakh/Changthang | score 0.24 | slope 6.6 deg | night min -31 C</div>`)[0];
+                popup_8972e8746dd5bcfe829895b2dbb85b4e.setContent(html_024ffc8de47995bdef95a4bd5c56b312);
+            
+        
+
+        circle_marker_ce95c7f12714df8fd24065924f3eabf4.bindPopup(popup_8972e8746dd5bcfe829895b2dbb85b4e)
+        ;
+
+        
+    
+    
+            var circle_marker_eee1fee70b753dc2e27ef77bc526827a = L.circleMarker(
+                [33.0355445734954, 78.58012947835515],
+                {"bubblingMouseEvents": true, "color": "#fff7b2", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fff7b2", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_27ea24173235efbbc727dde51b4422d1);
+        
+    
+        var popup_b5093e317f89b79b616b6cd9837de54a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6befb849f3a24a88d192c464ac004fc8 = $(`<div id="html_6befb849f3a24a88d192c464ac004fc8" style="width: 100.0%; height: 100.0%;">Ladakh/Changthang | score 0.26 | slope 13.4 deg | night min -28 C</div>`)[0];
+                popup_b5093e317f89b79b616b6cd9837de54a.setContent(html_6befb849f3a24a88d192c464ac004fc8);
+            
+        
+
+        circle_marker_eee1fee70b753dc2e27ef77bc526827a.bindPopup(popup_b5093e317f89b79b616b6cd9837de54a)
+        ;
+
+        
+    
+    
+            var circle_marker_35fdb9b27b75e9715b1ade00a8aa0d65 = L.circleMarker(
+                [33.080460337701375, 78.0860560720894],
+                {"bubblingMouseEvents": true, "color": "#fff1a8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fff1a8", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_27ea24173235efbbc727dde51b4422d1);
+        
+    
+        var popup_2765a0b61673296d30b68a3d35944261 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_726c744e8356070ed4d28684ea5f307c = $(`<div id="html_726c744e8356070ed4d28684ea5f307c" style="width: 100.0%; height: 100.0%;">Ladakh/Changthang | score 0.26 | slope 16.2 deg | night min -34 C</div>`)[0];
+                popup_2765a0b61673296d30b68a3d35944261.setContent(html_726c744e8356070ed4d28684ea5f307c);
+            
+        
+
+        circle_marker_35fdb9b27b75e9715b1ade00a8aa0d65.bindPopup(popup_2765a0b61673296d30b68a3d35944261)
+        ;
+
+        
+    
+    
+            var circle_marker_c70df2c3dfefc985a2fbb8ea948ff762 = L.circleMarker(
+                [33.12537610190736, 78.13097183629537],
+                {"bubblingMouseEvents": true, "color": "#fff0a6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fff0a6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_27ea24173235efbbc727dde51b4422d1);
+        
+    
+        var popup_e92fce4556483999139c6d029de85777 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_760f2006e39790efcc16abeb49b04f09 = $(`<div id="html_760f2006e39790efcc16abeb49b04f09" style="width: 100.0%; height: 100.0%;">Ladakh/Changthang | score 0.26 | slope 14.8 deg | night min -35 C</div>`)[0];
+                popup_e92fce4556483999139c6d029de85777.setContent(html_760f2006e39790efcc16abeb49b04f09);
+            
+        
+
+        circle_marker_c70df2c3dfefc985a2fbb8ea948ff762.bindPopup(popup_e92fce4556483999139c6d029de85777)
+        ;
+
+        
+    
+    
+            var circle_marker_1165804426137beacfb6043d004f9a6c = L.circleMarker(
+                [33.30503915873126, 78.89453982779698],
+                {"bubblingMouseEvents": true, "color": "#feea9b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#feea9b", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_27ea24173235efbbc727dde51b4422d1);
+        
+    
+        var popup_7ca021cb6a9bcaffd5a654121bde431b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9cd3cb168c6c3dcca4d8bbdfcca59a91 = $(`<div id="html_9cd3cb168c6c3dcca4d8bbdfcca59a91" style="width: 100.0%; height: 100.0%;">Ladakh/Changthang | score 0.27 | slope 10.2 deg | night min -24 C</div>`)[0];
+                popup_7ca021cb6a9bcaffd5a654121bde431b.setContent(html_9cd3cb168c6c3dcca4d8bbdfcca59a91);
+            
+        
+
+        circle_marker_1165804426137beacfb6043d004f9a6c.bindPopup(popup_7ca021cb6a9bcaffd5a654121bde431b)
+        ;
+
+        
+    
+    
+            var circle_marker_3c35986b9937d5a5ba66c55ef65937f0 = L.circleMarker(
+                [33.70928103658504, 78.62504524256111],
+                {"bubblingMouseEvents": true, "color": "#fee999", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee999", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_27ea24173235efbbc727dde51b4422d1);
+        
+    
+        var popup_9f848b77616bd37ccfad75422da063f1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0726af2fa71c967b596bd00e4377cf8b = $(`<div id="html_0726af2fa71c967b596bd00e4377cf8b" style="width: 100.0%; height: 100.0%;">Ladakh/Changthang | score 0.27 | slope 11.5 deg | night min -23 C</div>`)[0];
+                popup_9f848b77616bd37ccfad75422da063f1.setContent(html_0726af2fa71c967b596bd00e4377cf8b);
+            
+        
+
+        circle_marker_3c35986b9937d5a5ba66c55ef65937f0.bindPopup(popup_9f848b77616bd37ccfad75422da063f1)
+        ;
+
+        
+    
+    
+            var circle_marker_15bd26d7ce9db5eda9cfe034d6b160a0 = L.circleMarker(
+                [33.215207630319306, 78.0860560720894],
+                {"bubblingMouseEvents": true, "color": "#fedc88", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fedc88", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_27ea24173235efbbc727dde51b4422d1);
+        
+    
+        var popup_6ecc1af53aa92706611f33b4bcea90a8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_134407223bb8ed49c1157687e7ecacd0 = $(`<div id="html_134407223bb8ed49c1157687e7ecacd0" style="width: 100.0%; height: 100.0%;">Ladakh/Changthang | score 0.28 | slope 13.8 deg | night min -29 C</div>`)[0];
+                popup_6ecc1af53aa92706611f33b4bcea90a8.setContent(html_134407223bb8ed49c1157687e7ecacd0);
+            
+        
+
+        circle_marker_15bd26d7ce9db5eda9cfe034d6b160a0.bindPopup(popup_6ecc1af53aa92706611f33b4bcea90a8)
+        ;
+
+        
+    
+    
+            var circle_marker_f4d94c1bb9458d313aaa7fd34f25dd14 = L.circleMarker(
+                [33.17029186611333, 78.04114030788342],
+                {"bubblingMouseEvents": true, "color": "#feca79", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#feca79", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_27ea24173235efbbc727dde51b4422d1);
+        
+    
+        var popup_e574a1952aa115c243c6a0147003cec4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f6d5bdb494fbc5e2547372374eb03aed = $(`<div id="html_f6d5bdb494fbc5e2547372374eb03aed" style="width: 100.0%; height: 100.0%;">Ladakh/Changthang | score 0.29 | slope 14.6 deg | night min -30 C</div>`)[0];
+                popup_e574a1952aa115c243c6a0147003cec4.setContent(html_f6d5bdb494fbc5e2547372374eb03aed);
+            
+        
+
+        circle_marker_f4d94c1bb9458d313aaa7fd34f25dd14.bindPopup(popup_e574a1952aa115c243c6a0147003cec4)
+        ;
+
+        
+    
+    
+            var circle_marker_7ca91e51e3bc0b33c590e485047c58e6 = L.circleMarker(
+                [33.215207630319306, 78.98437135620892],
+                {"bubblingMouseEvents": true, "color": "#fdc776", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fdc776", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_27ea24173235efbbc727dde51b4422d1);
+        
+    
+        var popup_36d0e537a2c1782f1b948583f4bb4a48 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_60e9557d683249b355ac910a9e981add = $(`<div id="html_60e9557d683249b355ac910a9e981add" style="width: 100.0%; height: 100.0%;">Ladakh/Changthang | score 0.29 | slope 8.1 deg | night min -22 C</div>`)[0];
+                popup_36d0e537a2c1782f1b948583f4bb4a48.setContent(html_60e9557d683249b355ac910a9e981add);
+            
+        
+
+        circle_marker_7ca91e51e3bc0b33c590e485047c58e6.bindPopup(popup_36d0e537a2c1782f1b948583f4bb4a48)
+        ;
+
+        
+    
+    
+            var circle_marker_d2b3052bd0a74781eea13d747f83fcb1 = L.circleMarker(
+                [33.26012339452528, 78.17588760050135],
+                {"bubblingMouseEvents": true, "color": "#fdbd6d", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fdbd6d", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_27ea24173235efbbc727dde51b4422d1);
+        
+    
+        var popup_288368f6081c843db51a2464df7d5103 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_432ca463a048b7d2655f3472940db792 = $(`<div id="html_432ca463a048b7d2655f3472940db792" style="width: 100.0%; height: 100.0%;">Ladakh/Changthang | score 0.29 | slope 13.9 deg | night min -30 C</div>`)[0];
+                popup_288368f6081c843db51a2464df7d5103.setContent(html_432ca463a048b7d2655f3472940db792);
+            
+        
+
+        circle_marker_d2b3052bd0a74781eea13d747f83fcb1.bindPopup(popup_288368f6081c843db51a2464df7d5103)
+        ;
+
+        
+    
+    
+            var circle_marker_93b72922fa65085155526a29ad625786 = L.circleMarker(
+                [33.26012339452528, 78.93945559200294],
+                {"bubblingMouseEvents": true, "color": "#fdaf62", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fdaf62", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_27ea24173235efbbc727dde51b4422d1);
+        
+    
+        var popup_5759e4b3014235b3c58be76ce52fd139 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c6865ecfaee919df8cafa923320b84e4 = $(`<div id="html_c6865ecfaee919df8cafa923320b84e4" style="width: 100.0%; height: 100.0%;">Ladakh/Changthang | score 0.30 | slope 7.1 deg | night min -23 C</div>`)[0];
+                popup_5759e4b3014235b3c58be76ce52fd139.setContent(html_c6865ecfaee919df8cafa923320b84e4);
+            
+        
+
+        circle_marker_93b72922fa65085155526a29ad625786.bindPopup(popup_5759e4b3014235b3c58be76ce52fd139)
+        ;
+
+        
+    
+    
+            var circle_marker_5946130fe4cbda412d4dacbefef40947 = L.circleMarker(
+                [33.0355445734954, 78.71487677097306],
+                {"bubblingMouseEvents": true, "color": "#fb9d59", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fb9d59", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_27ea24173235efbbc727dde51b4422d1);
+        
+    
+        var popup_1955d500bf922d31bf9f460c5a743b0f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_83807c9d468e5421ffe84e14dc2c8ce3 = $(`<div id="html_83807c9d468e5421ffe84e14dc2c8ce3" style="width: 100.0%; height: 100.0%;">Ladakh/Changthang | score 0.31 | slope 10.6 deg | night min -20 C</div>`)[0];
+                popup_1955d500bf922d31bf9f460c5a743b0f.setContent(html_83807c9d468e5421ffe84e14dc2c8ce3);
+            
+        
+
+        circle_marker_5946130fe4cbda412d4dacbefef40947.bindPopup(popup_1955d500bf922d31bf9f460c5a743b0f)
+        ;
+
+        
+    
+    
+            var circle_marker_584fd4dc458f1d8cf4d863d6782a7a4c = L.circleMarker(
+                [33.664365272379065, 78.49029794994318],
+                {"bubblingMouseEvents": true, "color": "#f7814c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f7814c", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_27ea24173235efbbc727dde51b4422d1);
+        
+    
+        var popup_6f67c79c900c97ad71c081f122c234b7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_879d7079d58fcd66f833c7e897d3e312 = $(`<div id="html_879d7079d58fcd66f833c7e897d3e312" style="width: 100.0%; height: 100.0%;">Ladakh/Changthang | score 0.32 | slope 12.6 deg | night min -27 C</div>`)[0];
+                popup_6f67c79c900c97ad71c081f122c234b7.setContent(html_879d7079d58fcd66f833c7e897d3e312);
+            
+        
+
+        circle_marker_584fd4dc458f1d8cf4d863d6782a7a4c.bindPopup(popup_6f67c79c900c97ad71c081f122c234b7)
+        ;
+
+        
+    
+    
+            var circle_marker_a06af1975dc709868269166a02e520f0 = L.circleMarker(
+                [33.215207630319306, 78.58012947835515],
+                {"bubblingMouseEvents": true, "color": "#f67a49", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f67a49", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_27ea24173235efbbc727dde51b4422d1);
+        
+    
+        var popup_b74f7b3bb0a448666277e46dc9832d8c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6883b02c5d95d1ba05a97893956e2e53 = $(`<div id="html_6883b02c5d95d1ba05a97893956e2e53" style="width: 100.0%; height: 100.0%;">Ladakh/Changthang | score 0.32 | slope 11.7 deg | night min -20 C</div>`)[0];
+                popup_b74f7b3bb0a448666277e46dc9832d8c.setContent(html_6883b02c5d95d1ba05a97893956e2e53);
+            
+        
+
+        circle_marker_a06af1975dc709868269166a02e520f0.bindPopup(popup_b74f7b3bb0a448666277e46dc9832d8c)
+        ;
+
+        
+    
+    
+            var circle_marker_ea8fa1b8651d4f2f151e7694cac9bcf4 = L.circleMarker(
+                [33.080460337701375, 78.80470829938503],
+                {"bubblingMouseEvents": true, "color": "#f46d43", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f46d43", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_27ea24173235efbbc727dde51b4422d1);
+        
+    
+        var popup_13950c54d3258eb9bd0f3a779b316e2b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_57331e95e6da70f7c80b7ac19cd4dbbd = $(`<div id="html_57331e95e6da70f7c80b7ac19cd4dbbd" style="width: 100.0%; height: 100.0%;">Ladakh/Changthang | score 0.32 | slope 12.1 deg | night min -19 C</div>`)[0];
+                popup_13950c54d3258eb9bd0f3a779b316e2b.setContent(html_57331e95e6da70f7c80b7ac19cd4dbbd);
+            
+        
+
+        circle_marker_ea8fa1b8651d4f2f151e7694cac9bcf4.bindPopup(popup_13950c54d3258eb9bd0f3a779b316e2b)
+        ;
+
+        
+    
+    
+            var circle_marker_43aa479d2f0c677e90f52524265868da = L.circleMarker(
+                [33.0355445734954, 78.849624063591],
+                {"bubblingMouseEvents": true, "color": "#f46d43", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f46d43", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_27ea24173235efbbc727dde51b4422d1);
+        
+    
+        var popup_459d2bd21424fb4bee3b426149fa1ae9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_da9bad7305610f5f30656398d9cd8948 = $(`<div id="html_da9bad7305610f5f30656398d9cd8948" style="width: 100.0%; height: 100.0%;">Ladakh/Changthang | score 0.32 | slope 10.0 deg | night min -20 C</div>`)[0];
+                popup_459d2bd21424fb4bee3b426149fa1ae9.setContent(html_da9bad7305610f5f30656398d9cd8948);
+            
+        
+
+        circle_marker_43aa479d2f0c677e90f52524265868da.bindPopup(popup_459d2bd21424fb4bee3b426149fa1ae9)
+        ;
+
+        
+    
+    
+            var circle_marker_39902dd736f997c80212f2d8f50b6578 = L.circleMarker(
+                [33.574533743967116, 78.75979253517905],
+                {"bubblingMouseEvents": true, "color": "#f36b42", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f36b42", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_27ea24173235efbbc727dde51b4422d1);
+        
+    
+        var popup_981841370e2d84077e71f5b389b7267e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e0e3ea60c974c6a6543c736b762c9f6f = $(`<div id="html_e0e3ea60c974c6a6543c736b762c9f6f" style="width: 100.0%; height: 100.0%;">Ladakh/Changthang | score 0.32 | slope 10.1 deg | night min -22 C</div>`)[0];
+                popup_981841370e2d84077e71f5b389b7267e.setContent(html_e0e3ea60c974c6a6543c736b762c9f6f);
+            
+        
+
+        circle_marker_39902dd736f997c80212f2d8f50b6578.bindPopup(popup_981841370e2d84077e71f5b389b7267e)
+        ;
+
+        
+    
+    
+            var circle_marker_e798d8777a3cd6bc3d1f438c4bedc74d = L.circleMarker(
+                [33.080460337701375, 78.849624063591],
+                {"bubblingMouseEvents": true, "color": "#ef633f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ef633f", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_27ea24173235efbbc727dde51b4422d1);
+        
+    
+        var popup_fa64b32160ab8e3bf6afb52e3426aab9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bd962eb6acd4da4b46dd3186e3d59f0d = $(`<div id="html_bd962eb6acd4da4b46dd3186e3d59f0d" style="width: 100.0%; height: 100.0%;">Ladakh/Changthang | score 0.33 | slope 10.8 deg | night min -19 C</div>`)[0];
+                popup_fa64b32160ab8e3bf6afb52e3426aab9.setContent(html_bd962eb6acd4da4b46dd3186e3d59f0d);
+            
+        
+
+        circle_marker_e798d8777a3cd6bc3d1f438c4bedc74d.bindPopup(popup_fa64b32160ab8e3bf6afb52e3426aab9)
+        ;
+
+        
+    
+    
+            var circle_marker_dfbf144a0a3172813646cb3dbe2ba5c0 = L.circleMarker(
+                [33.0355445734954, 78.53521371414917],
+                {"bubblingMouseEvents": true, "color": "#ee613e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ee613e", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_27ea24173235efbbc727dde51b4422d1);
+        
+    
+        var popup_a36f9c00261b5db382b0b1e55e8aa605 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_55f767c0323a2e9209d89c7deb427f2b = $(`<div id="html_55f767c0323a2e9209d89c7deb427f2b" style="width: 100.0%; height: 100.0%;">Ladakh/Changthang | score 0.33 | slope 14.8 deg | night min -28 C</div>`)[0];
+                popup_a36f9c00261b5db382b0b1e55e8aa605.setContent(html_55f767c0323a2e9209d89c7deb427f2b);
+            
+        
+
+        circle_marker_dfbf144a0a3172813646cb3dbe2ba5c0.bindPopup(popup_a36f9c00261b5db382b0b1e55e8aa605)
+        ;
+
+        
+    
+    
+            var circle_marker_5884c87355257534f10dbc2cbe4519da = L.circleMarker(
+                [33.75419680079102, 78.44538218573722],
+                {"bubblingMouseEvents": true, "color": "#ea5739", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ea5739", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_27ea24173235efbbc727dde51b4422d1);
+        
+    
+        var popup_1c8d3a439adf7ba39cf5f047feb6a311 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a7f7ded6fe5b292ec192210f7a663fb8 = $(`<div id="html_a7f7ded6fe5b292ec192210f7a663fb8" style="width: 100.0%; height: 100.0%;">Ladakh/Changthang | score 0.33 | slope 13.9 deg | night min -30 C</div>`)[0];
+                popup_1c8d3a439adf7ba39cf5f047feb6a311.setContent(html_a7f7ded6fe5b292ec192210f7a663fb8);
+            
+        
+
+        circle_marker_5884c87355257534f10dbc2cbe4519da.bindPopup(popup_1c8d3a439adf7ba39cf5f047feb6a311)
+        ;
+
+        
+    
+    
+            var circle_marker_a6c6f9928abf536bb8f656d3dd35e855 = L.circleMarker(
+                [33.12537610190736, 78.71487677097306],
+                {"bubblingMouseEvents": true, "color": "#e24731", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e24731", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_27ea24173235efbbc727dde51b4422d1);
+        
+    
+        var popup_b0ca752b433dea1116ceea2582204606 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_622d26f1e8c9cc2d8e2dc02e7a80fb53 = $(`<div id="html_622d26f1e8c9cc2d8e2dc02e7a80fb53" style="width: 100.0%; height: 100.0%;">Ladakh/Changthang | score 0.34 | slope 12.2 deg | night min -18 C</div>`)[0];
+                popup_b0ca752b433dea1116ceea2582204606.setContent(html_622d26f1e8c9cc2d8e2dc02e7a80fb53);
+            
+        
+
+        circle_marker_a6c6f9928abf536bb8f656d3dd35e855.bindPopup(popup_b0ca752b433dea1116ceea2582204606)
+        ;
+
+        
+    
+    
+            var circle_marker_6ad4deba6154599902a502077597f26c = L.circleMarker(
+                [33.52961797976114, 78.75979253517905],
+                {"bubblingMouseEvents": true, "color": "#de402e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#de402e", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_27ea24173235efbbc727dde51b4422d1);
+        
+    
+        var popup_7bde93be254ec95ac34cb01d9fb329a2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9a459a29888add1f56ecbf3493eb462d = $(`<div id="html_9a459a29888add1f56ecbf3493eb462d" style="width: 100.0%; height: 100.0%;">Ladakh/Changthang | score 0.34 | slope 12.6 deg | night min -23 C</div>`)[0];
+                popup_7bde93be254ec95ac34cb01d9fb329a2.setContent(html_9a459a29888add1f56ecbf3493eb462d);
+            
+        
+
+        circle_marker_6ad4deba6154599902a502077597f26c.bindPopup(popup_7bde93be254ec95ac34cb01d9fb329a2)
+        ;
+
+        
+    
+    
+            var circle_marker_4086080e0348370cf75382ef1dcede5c = L.circleMarker(
+                [33.17029186611333, 78.75979253517905],
+                {"bubblingMouseEvents": true, "color": "#d93429", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d93429", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_27ea24173235efbbc727dde51b4422d1);
+        
+    
+        var popup_b476f6cdd8c8feaca8583309b84c8e96 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_82d8f74af7b93eb404c7e5f7710517d6 = $(`<div id="html_82d8f74af7b93eb404c7e5f7710517d6" style="width: 100.0%; height: 100.0%;">Ladakh/Changthang | score 0.35 | slope 13.1 deg | night min -21 C</div>`)[0];
+                popup_b476f6cdd8c8feaca8583309b84c8e96.setContent(html_82d8f74af7b93eb404c7e5f7710517d6);
+            
+        
+
+        circle_marker_4086080e0348370cf75382ef1dcede5c.bindPopup(popup_b476f6cdd8c8feaca8583309b84c8e96)
+        ;
+
+        
+    
+    
+            var circle_marker_37067d6a349f5223afde19016c800398 = L.circleMarker(
+                [33.0355445734954, 78.6699610067671],
+                {"bubblingMouseEvents": true, "color": "#d62f27", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d62f27", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_27ea24173235efbbc727dde51b4422d1);
+        
+    
+        var popup_ec54f0ebdcee200feef81e600c7f2123 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d5f07b691382a22e26492d1b42fe3a51 = $(`<div id="html_d5f07b691382a22e26492d1b42fe3a51" style="width: 100.0%; height: 100.0%;">Ladakh/Changthang | score 0.35 | slope 12.6 deg | night min -21 C</div>`)[0];
+                popup_ec54f0ebdcee200feef81e600c7f2123.setContent(html_d5f07b691382a22e26492d1b42fe3a51);
+            
+        
+
+        circle_marker_37067d6a349f5223afde19016c800398.bindPopup(popup_ec54f0ebdcee200feef81e600c7f2123)
+        ;
+
+        
+    
+    
+            var circle_marker_b00ffb76522181ab850ab9657f877c73 = L.circleMarker(
+                [33.30503915873126, 78.04114030788342],
+                {"bubblingMouseEvents": true, "color": "#ce2827", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ce2827", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_27ea24173235efbbc727dde51b4422d1);
+        
+    
+        var popup_5e8e1d6599cea8d0a956c64ed32346d3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_77ae4777ed19dfd76f96d94c3d38fb49 = $(`<div id="html_77ae4777ed19dfd76f96d94c3d38fb49" style="width: 100.0%; height: 100.0%;">Ladakh/Changthang | score 0.35 | slope 3.3 deg | night min -28 C</div>`)[0];
+                popup_5e8e1d6599cea8d0a956c64ed32346d3.setContent(html_77ae4777ed19dfd76f96d94c3d38fb49);
+            
+        
+
+        circle_marker_b00ffb76522181ab850ab9657f877c73.bindPopup(popup_5e8e1d6599cea8d0a956c64ed32346d3)
+        ;
+
+        
+    
+    
+            var circle_marker_512cbfafd78dac97de48e2364f0543d7 = L.circleMarker(
+                [33.84402832920297, 78.53521371414917],
+                {"bubblingMouseEvents": true, "color": "#c62027", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c62027", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_27ea24173235efbbc727dde51b4422d1);
+        
+    
+        var popup_0030e8080bdd3edab6154d91bea6e5c2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_56bc4c7af53bcb90531c569cd57b0324 = $(`<div id="html_56bc4c7af53bcb90531c569cd57b0324" style="width: 100.0%; height: 100.0%;">Ladakh/Changthang | score 0.36 | slope 11.9 deg | night min -23 C</div>`)[0];
+                popup_0030e8080bdd3edab6154d91bea6e5c2.setContent(html_56bc4c7af53bcb90531c569cd57b0324);
+            
+        
+
+        circle_marker_512cbfafd78dac97de48e2364f0543d7.bindPopup(popup_0030e8080bdd3edab6154d91bea6e5c2)
+        ;
+
+        
+    
+    
+            var circle_marker_8ac06bd9eecdef0ab42a5ed36d1f373d = L.circleMarker(
+                [33.17029186611333, 78.98437135620892],
+                {"bubblingMouseEvents": true, "color": "#bb1526", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#bb1526", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_27ea24173235efbbc727dde51b4422d1);
+        
+    
+        var popup_cac854bf4fcba468b9b83917d1a1fee3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_815f726c8b21d434716f08b60e2f238c = $(`<div id="html_815f726c8b21d434716f08b60e2f238c" style="width: 100.0%; height: 100.0%;">Ladakh/Changthang | score 0.36 | slope 9.1 deg | night min -20 C</div>`)[0];
+                popup_cac854bf4fcba468b9b83917d1a1fee3.setContent(html_815f726c8b21d434716f08b60e2f238c);
+            
+        
+
+        circle_marker_8ac06bd9eecdef0ab42a5ed36d1f373d.bindPopup(popup_cac854bf4fcba468b9b83917d1a1fee3)
+        ;
+
+        
+    
+    
+            var circle_marker_10ae028e06a6acd81297157fc1557c94 = L.circleMarker(
+                [33.799112564996996, 78.98437135620892],
+                {"bubblingMouseEvents": true, "color": "#ab0626", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ab0626", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_27ea24173235efbbc727dde51b4422d1);
+        
+    
+        var popup_aa26be5111db14154f5455860cb0ed9d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_20db8281a13c04406889a1810b0bc7af = $(`<div id="html_20db8281a13c04406889a1810b0bc7af" style="width: 100.0%; height: 100.0%;">Ladakh/Changthang | score 0.37 | slope 13.5 deg | night min -22 C</div>`)[0];
+                popup_aa26be5111db14154f5455860cb0ed9d.setContent(html_20db8281a13c04406889a1810b0bc7af);
+            
+        
+
+        circle_marker_10ae028e06a6acd81297157fc1557c94.bindPopup(popup_aa26be5111db14154f5455860cb0ed9d)
+        ;
+
+        
+    
+    
+            var circle_marker_01668ac9a4617f7789022ecbd5957fb2 = L.circleMarker(
+                [33.17029186611333, 78.6699610067671],
+                {"bubblingMouseEvents": true, "color": "#a50026", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#a50026", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_27ea24173235efbbc727dde51b4422d1);
+        
+    
+        var popup_9b49fe4010693539e573caf97f17f023 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_67abf9e6d503be989cdadfe57160da18 = $(`<div id="html_67abf9e6d503be989cdadfe57160da18" style="width: 100.0%; height: 100.0%;">Ladakh/Changthang | score 0.37 | slope 8.1 deg | night min -20 C</div>`)[0];
+                popup_9b49fe4010693539e573caf97f17f023.setContent(html_67abf9e6d503be989cdadfe57160da18);
+            
+        
+
+        circle_marker_01668ac9a4617f7789022ecbd5957fb2.bindPopup(popup_9b49fe4010693539e573caf97f17f023)
+        ;
+
+        
+    
+    
+            map_27ea24173235efbbc727dde51b4422d1.fitBounds(
+                [[33.0355445734954, 78.04114030788342], [33.84402832920297, 78.98437135620892]],
+                {}
+            );
+        
+    
+            var layer_control_4a4c2cb2adaeed0e27bd85332b6af34d_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_08cdbcd38d64d7e2ae54dffa7d39fbb2,
+                    "Satellite" : tile_layer_de695721c896e5dda69efd0cd74f3a65,
+                },
+                overlays :  {
+                },
+            };
+            let layer_control_4a4c2cb2adaeed0e27bd85332b6af34d = L.control.layers(
+                layer_control_4a4c2cb2adaeed0e27bd85332b6af34d_layers.base_layers,
+                layer_control_4a4c2cb2adaeed0e27bd85332b6af34d_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_27ea24173235efbbc727dde51b4422d1);
+
+        
+</script>
+</html>
